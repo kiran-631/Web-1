@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function add(){
+            var a = document.getElementById("aval").value;
+            var b = document.getElementById("bval").value;
+            a = parseInt(a);
+            b = parseInt(b);
+            var c = a + b;
+            document.getElementById("Result").innerHTML = "Sum is " + c;
+        } 
+        
+        function sub(){
+            var a = document.getElementById("aval").value;
+            var b = document.getElementById("bval").value;
+            a = parseInt(a);
+            b = parseInt(b);
+            var d = a - b;
+            document.getElementById("result").innerHTML = "Difference is " + d;
+        } 
+        function mul(){
+            var a = document.getElementById("aval").value;
+            var b = document.getElementById("bval").value;
+            a = parseInt(a);
+            b = parseInt(b);
+            var e = a * b;
+            document.getElementById("esult").innerHTML = "Multiplication is " + e;
+        } 
+    </script>
+</head>
+<body>
+    Enter a value: <input type="text" id="aval"/><br>
+    Enter b value: <input type="text" id="bval"/><br>
+    
+    <input type="button" value="Add " onclick="add(); "/>
+    <input type="button" value="Subtract" onclick=" sub();"/>
+    <input type="button" value="Multiplication" onclick=" mul();"/>
+    <p id="Result">Nothing here .........</p>
+    <p id="result">Nothing here .........</p>
+    <p id="esult">Nothing here .........</p>
+</body>
+</html>

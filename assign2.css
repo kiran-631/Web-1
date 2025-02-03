@@ -1,0 +1,79 @@
+.about{
+    background-color: blue;
+    color: white;
+}
+.abts{
+    background-color: yellow;
+
+
+}
+li:hover{
+    color: rgb(55, 15, 231);
+}
+a:hover{
+    color: blue;
+}
+.abho{
+    background-color: bisque;
+    color: dark;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    
+}
+.proho{
+    background-color: bisque;
+    padding: 20px;
+}
+.contho{
+    background-color: bisque;
+    padding: 20px;
+}
+.introho{
+    color: black;
+    background-color: bisque;
+    padding: 20px;
+ 
+  
+   
+   
+}
+.bar{
+    background-color: aqua;
+}
+.navbar-image {
+    width: 55px;
+    height: 55px;
+   
+  }
+  .navbar-images {
+    width: 55px;
+    height: 50px;
+    margin-left: 40px;
+   
+  }
+.intro{
+    text-align: right;
+    background-color: cadetblue;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 20px;
+    padding: 5px;
+    font-family: Lobster;
+    
+        text-shadow: 2px 2px 5px white;
+      
+}
+.res{
+    text-align: right;
+    background-color: cadetblue;
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 20px;
+    padding: 5px;
+    margin: 20px;
+    font-family: Lobster;
+    text-shadow: 2px 2px 5px white;
+}
+.htag{
+    text-shadow: 2px 2px 4px #000000;
+}
+
