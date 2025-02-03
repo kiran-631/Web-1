@@ -1,0 +1,145 @@
+.kiranpic{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.calen{    
+    margin-bottom: 50px;
+    margin: 20px;
+}
+.crais{
+    margin-bottom: 20px;
+}
+.calender{
+    margin: 2px;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    width:30%;
+}
+.coropic{
+    margin-top: 10px;
+    height: 30vh;
+    width: 25vw;
+    margin: 2px;
+    margin-bottom: 50px;
+}
+.kiranname{
+    margin-left: 20px;
+}
+.details{
+    margin: 30px;
+}
+.semsub{
+    background-color: aliceblue;
+    margin: -1px;
+    padding: 1px;
+    text-decoration: underline;
+    font-family: Roboto;
+}
+.semhead{
+    font-weight: bold;
+    background-color:aqua;
+}
+.semtable{
+    margin: 5px;
+    width: 50vw;
+}
+.semtable3{
+    margin: 5px;
+    width: 24.5vw;
+}
+.semh{
+    font-family: Caveat;
+    background-color: blueviolet;
+    width: 50vw;
+    color: white;
+}
+.iconpro{
+    width: 50vw;
+    background-color: blue;
+    margin-bottom: 5px;
+    color: white;
+}
+.iconp{
+    padding: 10px;
+    
+
+}
+.search-container {
+    display: flex;
+    align-items: center; 
+    border: 1px solid #ccc; 
+    padding: 5px; 
+    border-radius: 20px; 
+    width: 30vw; 
+    margin: 3px;
+    height: 30px;
+    background-color: white;
+  }
+  .search-container input[type="text"] {
+    border: none; 
+    outline: none; 
+    flex-grow: 1; 
+    padding: 5px; 
+    font-size: 16px; 
+    background: transparent;
+  }
+  .search-btn {
+    background: transparent;
+    border: none; 
+    padding: 5px; 
+    cursor: pointer; 
+  }
+
+  .search-icon {
+    width: 20px; 
+    height: 20px;
+  }
+  .searc{
+    width: 10vw;
+    
+   
+  }
+  .search-container {
+    display: flex;
+    align-items: center; 
+    border: 1px solid #ccc; 
+    padding: 5px; 
+    border-radius: 20px; 
+    width: 12vw; 
+    background-color: aqua;
+  }
+  .search-container input[type="text"] {
+    border: none; 
+    outline: none; 
+    flex-grow: 1; 
+    padding: 5px; /* Add padding */
+    font-size: 16px; /* Adjust font size */
+    background: transparent; /* Make background transparent */
+  }
+  .search-btn {
+    background: transparent; /* Make background transparent */
+    border: none; /* Remove border */
+    padding: 5px; /* Add padding */
+    cursor: pointer; /* Make cursor pointer on hover */
+  }
+
+  .search-icon {
+    width: 20px; /* Adjust icon size */
+    height: 20px; /* Adjust icon size */
+  }
+  .semsub{
+    background-color: aliceblue;
+    margin: 1px;
+    padding: 1px;
+    text-decoration: underline;
+    font-family: Roboto;
+}
+.country{
+  margin: 5px;
+}
+.india{
+  padding: 10px;
+  background-color: azure;
+  width: 15vw;
+}
