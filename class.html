@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Dropdowns</title>
+    <script>
+        // JSON data defined inside JavaScript
+        var jsonData = {
+            "USA": {
+                "California": ["Los Angeles", "San Francisco", "San Diego"],
+                "Texas": ["Houston", "Dallas", "Austin"]
+            },
+            "India": {
+                "Maharashtra": ["Mumbai", "Pune", "Nagpur"],
+                "Karnataka": ["Bangalore", "Mysore", "Hubli"]
+            }
+        };
+
+        function populateCountries() {
+            var countrySelect = document.getElementById("country");
+            for (var country in jsonData) {
+                var option = document.createElement("option");
+                option.value = country;
+                option.textContent = country;
+                countrySelect.appendChild(option);
+            }
+        }
+
+        function updateDistricts() {
+            var countrySelect = document.getElementById("country");
+            var districtSelect = document.getElementById("district");
+            var citySelect = document.getElementById("city");
+
+            districtSelect.innerHTML = '<option value="">Select District</option>';
+            citySelect.innerHTML = '<option value="">Select City</option>';
+            citySelect.disabled = true;
+
+            var selectedCountry = countrySelect.value;
+            if (selectedCountry) {
+                var districts = Object.keys(jsonData[selectedCountry]);
+                for (var i = 0; i < districts.length; i++) {
+                    var option = document.createElement("option");
+                    option.value = districts[i];
+                    option.textContent = districts[i];
+                    districtSelect.appendChild(option);
+                }
+                districtSelect.disabled = false;
+            } else {
+                districtSelect.disabled = true;
+            }
+        }
+
+        function updateCities() {
+            var countrySelect = document.getElementById("country");
+            var districtSelect = document.getElementById("district");
+            var citySelect = document.getElementById("city");
+
+            citySelect.innerHTML = '<option value="">Select City</option>';
+
+            var selectedCountry = countrySelect.value;
+            var selectedDistrict = districtSelect.value;
+
+            if (selectedDistrict) {
+                var cities = jsonData[selectedCountry][selectedDistrict];
+                for (var i = 0; i < cities.length; i++) {
+                    var option = document.createElement("option");
+                    option.value = cities[i];
+                    option.textContent = cities[i];
+                    citySelect.appendChild(option);
+                }
+                citySelect.disabled = false;
+            } else {
+                citySelect.disabled = true;
+            }
+        }
+    </script>
+</head>
+<body onload="populateCountries()">
+
+    <h2>Select Country, District, and City</h2>
+
+    <label for="country">Select Country:</label>
+    <select id="country" onchange="updateDistricts()">
+        <option value="">Select Country</option>
+    </select>
+
+    <label for="district">Select District:</label>
+    <select id="district" onchange="updateCities()" disabled>
+        <option value="">Select District</option>
+    </select>
+
+    <label for="city">Select City:</label>
+    <select id="city" disabled>
+        <option value="">Select City</option>
+    </select>
+
+</body>
+</html>
+json-countries.html
+Displaying json-countries.html.
